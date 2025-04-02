@@ -1,64 +1,39 @@
-export type NavLink = {
-  name: string;
+export type NavigationMenuLink = {
+  title: string;
   href: string;
+  image?: string;
 };
 
-export const NAV_LINKS_LEFT: NavLink[] = [
+export const catalogProducts: NavigationMenuLink[] = [
   {
-    name: "Docs",
-    href: "#",
+    title: "ДИВАНЫ",
+    href: "/sofas",
+    image: "/images/sofas.svg",
   },
   {
-    name: "Features",
-    href: "/#features",
+    title: "КРОВАТИ",
+    href: "/beds",
+    image: "/images/beds.svg",
   },
   {
-    name: "Pricing",
-    href: "/#pricing",
+    title: "КРЕСЛА",
+    href: "/armchairs",
+    image: "/images/chairs.svg",
   },
   {
-    name: "FAQ",
-    href: "/#faq",
-  },
-];
-
-export const COPYRIGHT_LINKS: NavLink[] = [
-  {
-    name: "Terms of Service",
-    href: "#",
-  },
-  {
-    name: "Privacy Policy",
-    href: "#",
+    title: "ПУФЫ",
+    href: "/poufs",
+    image: "/images/poufs.svg",
   },
 ];
 
-export const COMMUNITY_LINKS: NavLink[] = [
+export const cooperationItems: NavigationMenuLink[] = [
   {
-    name: "Discord",
-    href: "#",
+    title: "Дизайнерам и архитекторам",
+    href: "/cooperation/designers-architects",
   },
   {
-    name: "Send feedback",
-    href: "#",
-  },
-  {
-    name: "Community",
-    href: "#",
-  },
-];
-
-export const SOCIAL_LINKS: NavLink[] = [
-  {
-    name: "GitHub",
-    href: "#",
-  },
-  {
-    name: "Twitter",
-    href: "#",
-  },
-  {
-    name: "Product Hunt",
-    href: "#",
+    title: "Партнером",
+    href: "/cooperation/partners",
   },
 ];
