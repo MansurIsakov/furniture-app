@@ -1,10 +1,14 @@
-export type NavigationMenuLink = {
+export type CatalogMenuNavigation = {
+  image: string;
+} & MenuNavigation;
+
+export type MenuNavigation = {
   title: string;
   href: string;
   image?: string;
 };
 
-export const catalogProducts: NavigationMenuLink[] = [
+export const catalogProducts: CatalogMenuNavigation[] = [
   {
     title: "ДИВАНЫ",
     href: "/sofas",
@@ -27,13 +31,13 @@ export const catalogProducts: NavigationMenuLink[] = [
   },
 ];
 
-export const cooperationItems: NavigationMenuLink[] = [
+export const cooperationItems: MenuNavigation[] = [
   {
     title: "Дизайнерам и архитекторам",
     href: "/cooperation/designers-architects",
   },
   {
-    title: "Партнером",
+    title: "Партнерам",
     href: "/cooperation/partners",
   },
 ];
